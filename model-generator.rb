@@ -13,7 +13,7 @@ class ModelGenerator < Formula
     system "make", "install", "prefix=#{prefix}"
     # File.symlink("#{prefix}/model-generator", "/usr/local/sbin/model-generator")
     system "echo","\'export PATH=\"#{prefix}:$PATH\"\'",">> ~/.bash_profile"
-    print("Please execute the command: echo \'export PATH=\"/usr/local/sbin:$PATH\"\' >> ~/.bash_profile  to add path")
+    print("If model-generator command not found please execute the command below to export path")
 
   end
 
