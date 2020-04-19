@@ -4,16 +4,16 @@
 class ModelGenerator < Formula
   desc "Popina model to struct"
   homepage "https://github.com/popina/model-generator"
-  url "https://github.com/popina/model-generator.git", :branch => "feature/DataModelPathAsParameter", :revision => "433d766f999add42d6859413f6447dda87422680"
+  url "https://github.com/popina/model-generator.git", :branch => "feature/addArgsAndInstall", :revision => "433d766f999add42d6859413f6447dda87422680"
   version "1.0.0"
   # sha256 ""
-  head "https://github.com/popina/model-generator.git" , :branch => "feature/DataModelPathAsParameter"
+  head "https://github.com/popina/model-generator.git" , :branch => "feature/addArgsAndInstall"
   depends_on :xcode => ["11.2.1", :build]
   def install
     system "make", "install", "prefix=#{prefix}"
     # File.symlink("#{prefix}/model-generator", "/usr/local/sbin/model-generator")
     system "echo","\'export PATH=\"#{prefix}:$PATH\"\'",">> ~/.bash_profile"
-    print("If model-generator command not found please execute the command below to export path")
+    print("Please execute the command: echo \'export PATH=\"#{prefix}:$PATH\"\' >> ~/.bash_profile  to add path")
 
   end
 
