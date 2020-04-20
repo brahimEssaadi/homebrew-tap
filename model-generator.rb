@@ -11,9 +11,6 @@ class ModelGenerator < Formula
   depends_on :xcode => ["11.2.1", :build]
   def install
     system "make", "install", "prefix=#{prefix}"
-    # File.symlink("#{prefix}/model-generator", "/usr/local/sbin/model-generator")
-    system "echo","\'export PATH=\"#{prefix}:$PATH\"\'",">> ~/.bash_profile"
-    print("Please execute the command: echo \'export PATH=\"#{prefix}:$PATH\"\' >> ~/.bash_profile  to add path")
 
   end
 
