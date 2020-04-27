@@ -10,7 +10,7 @@ class ModelGenerator < Formula
   head "https://github.com/popina/model-generator.git" , :branch => "feature/AddVerboseFlagAndVersion"
   depends_on :xcode => ["11.2.1", :build]
   def install
-    system "make", "install", "prefix=#{prefix}", "VERSION=#{version}"
+    system "make", "install", "prefix=#{prefix}", "version=#{version}"
 
   end
 
