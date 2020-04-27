@@ -4,10 +4,10 @@
 class ModelGenerator < Formula
   desc "Popina model to struct"
   homepage "https://github.com/popina/model-generator"
-  url "https://github.com/popina/model-generator.git", :branch => "feature/addArgsAndInstall", :revision => "433d766f999add42d6859413f6447dda87422680"
+  url "https://github.com/popina/model-generator.git", :branch => "feature/AddVerboseFlagAndVersion", :revision => "433d766f999add42d6859413f6447dda87422680"
   version "0.0.1"
   # sha256 ""
-  head "https://github.com/popina/model-generator.git" , :branch => "feature/addArgsAndInstall"
+  head "https://github.com/popina/model-generator.git" , :branch => "feature/AddVerboseFlagAndVersion"
   depends_on :xcode => ["11.2.1", :build]
   def install
     system "make", "install", "prefix=#{prefix}", "version=#{version}"
