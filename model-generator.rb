@@ -6,7 +6,9 @@ class ModelGenerator < Formula
   homepage "https://github.com/popina/model-generator"
   url "https://github.com/popina/model-generator.git", :branch => "feature/AddVerboseFlagAndVersion", :revision => "433d766f999add42d6859413f6447dda87422680"
   version "3.0.1"
+  
   head "https://github.com/popina/model-generator.git" , :branch => "feature/AddVerboseFlagAndVersion"
+  
   # sha256 ""
   depends_on :xcode => ["11.2.1", :build]
   def install
