@@ -5,7 +5,7 @@ class ModelGenerator < Formula
   desc "Popina model to struct"
   homepage "https://github.com/popina/model-generator"
   url "https://github.com/popina/model-generator.git", :branch => "feature/moduleVersion", :revision => "433d766f999add42d6859413f6447dda87422680"
-  version "3.0.1"
+  version "4.0.1"
   # sha256 ""
   depends_on :xcode => ["11.2.1", :build]
   def install
